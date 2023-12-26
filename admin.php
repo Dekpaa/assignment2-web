@@ -68,17 +68,17 @@
       }
       $result = mysqli_query($conn,"SELECT name,email,subject,message FROM feedback");    
       $i = 0;
-      echo '<table class="table table-striped table-primary ">';
-      echo '<thead>';
-      echo '<tr>';
+        echo '<table class="table table-striped table-primary ">';
+        echo '<thead>';
+        echo '<tr>';
         echo '<th scope="col">No</th>';
         echo '<th scope="col">Name</th>';
         echo '<th scope="col"> Email</th>';
         echo '<th scope="col"> Subject </th>';
         echo '<th scope="col"> Feedback </th>';
-      echo '</tr>';
-      echo '</thead>';
-      echo '<tbody';
+        echo '</tr>';
+        echo '</thead>';
+        echo '<tbody';
       if (mysqli_num_rows($result) > 0) {
         while($row = mysqli_fetch_assoc($result)) {
             echo '<tr>';
